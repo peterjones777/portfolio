@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<HTML>
+    <script>
+        var slideIndex = 1;
+        var slideIndex1 = 1;
+        var slideIndex2 = 1;
+        var slideIndex3 = 1;
+        var slideIndex4 = 1;
+        var slideIndex5 = 1;
+        showSlides(slideIndex);
+        showSlides1(slideIndex1);
+        showSlides2(slideIndex2);
+        showSlides3(slideIndex3);
+        showSlides4(slideIndex4);
+        showSlides5(slideIndex5);
+
+    /*SMART BIN */
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+          }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);  
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("collection");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+         
+          slides[slideIndex-1].style.display = "block";
+          
+
+        }
+        /*BONFIRE JS*/
+        function plusSlides1(s) {
+         
+          showSlides1(slideIndex1 += s);
+         
+        }
+        
+        function currentSlide1(s) {
+        
+          showSlides1(slideIndex1 = s);
+          
+          
+          
+        }
+        function showSlides1(s) {
+          var p;
+          var slides1 = document.getElementsByClassName("collectionbon");
+          if (s > slides1.length) {slideIndex1 = 1}
+          if (s < 1) {slideIndex1 = slides1.length}
+          for (p = 0; p < slides1.length; p++) {
+              slides1[p].style.display = "none";
+          }
+         
+          slides1[slideIndex1-1].style.display = "block";
+          
+
+        }
+               /*ECO-FRIENDLY BIKE JS*/
+              
+               function plusSlides2(q)
+                {
+         showSlides2(slideIndex2 += q);
+       }
+       
+       function currentSlide2(q)
+        {
+       showSlides2(slideIndex2 = q);
+          }
+
+       function showSlides2(q) {
+         var r;
+         var slides2 = document.getElementsByClassName("collectioneco");
+         if (q > slides2.length) {slideIndex2 = 1}
+         if (q < 1) {slideIndex2 = slides2.length}
+         for (r = 0; r < slides2.length; r++) {
+             slides2[r].style.display = "none";
+         }
+        
+         slides2[slideIndex2-1].style.display = "block";
+         
+
+       }
+
+    /*RASPBERRY PI MONITOR*/
+    function plusSlides3(t)
+                {
+         showSlides3(slideIndex3 += t);
+       }
+       
+       function currentSlide3(t)
+        {
+       showSlides3(slideIndex3 = t);
+          }
+
+       function showSlides3(t) {
+         var u;
+         var slides3 = document.getElementsByClassName("collectionrasp");
+         if (t > slides3.length) {slideIndex3 = 1}
+         if (t < 1) {slideIndex3 = slides3.length}
+         for (u = 0; u < slides3.length; u++) {
+             slides3[u].style.display = "none";
+         }
+        
+         slides3[slideIndex3-1].style.display = "block";
+         
+
+       }
+       /*DRONE*/
+       function plusSlides4(v)
+                {
+         showSlides4(slideIndex4 += v);
+       }
+       
+       function currentSlide4(v)
+        {
+       showSlides4(slideIndex4 = v);
+          }
+
+       function showSlides4(v) {
+         var x;
+         var slides4 = document.getElementsByClassName("collectiondrone");
+         if (v > slides4.length) {slideIndex4 = 1}
+         if (v < 1) {slideIndex4 = slides4.length}
+         for (x = 0; x< slides4.length; x++) {
+             slides4[x].style.display = "none";
+         }
+        
+         slides4[slideIndex4-1].style.display = "block";
+       }
+         
+          /*GLASS BOTTLE SEGREGATOR*/
+       function plusSlides5(y)
+                {
+         showSlides5(slideIndex5 += y);
+       }
+       
+       function currentSlide5(y)
+        {
+       showSlides5(slideIndex5 = y);
+          }
+
+       function showSlides5(y) {
+         var z;
+         var slides5 = document.getElementsByClassName("collectionseg");
+         if (y > slides5.length) {slideIndex5 = 1}
+         if (y < 1) {slideIndex5 = slides5.length}
+         for (z = 0; z< slides5.length; z++) {
+             slides5[z].style.display = "none";
+         }
+        
+         slides5[slideIndex5-1].style.display = "block";
+       }
+         
+        </script>
+            
+    <Head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         body{
+            background-color:black;
+
+         }   
+         .headsecbg
+         {
+             box-sizing: border-box;
+         border:rgb(163, 172, 182) solid 3px;
+         }
+        .head{
+            grid-area: header;
+            padding-left:500px;
+            background-color:rgb(81,153,182);
+        }
+        .head2{
+             grid-area: header1;
+             padding-left:400px;
+             background-color: rgb(81, 153, 182);
+        
+        }
+        .header{
+            display:grid;
+            grid:'header header header1';
+            padding:5px;
+            border:darkred solid 2px;
+        }
+        .sector{
+            display:grid;
+            grid:'sector1 sector2 sector3 sector4 sector5 sector6';
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:rgb(163, 172, 182);
+            padding-right:20px;
+
+        }
+      
+        .sector1{
+            grid-area: sector1;
+        }
+        .sector2{
+            grid-area: sector2;
+        }
+        .sector3{
+            grid-area: sector3;
+        }
+        .sector4{
+            grid-area: sector4;
+        }
+        .sector5{
+            grid-area: sector5;
+        }
+        .sector6{
+            grid-area: sector6;
+        }
+        #headerfont
+        {
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(224, 187, 22);
+        font-size: 60px;
+        }
+        .box{
+            width:400px;
+            height:500px;
+            border:whitesmoke solid 3px;
+            position:absolute;
+            right:350px;
+            padding-right: 200px;
+            padding-left:200px;
+            padding-top: 20px;
+            padding-bottom:20px;
+
+        }
+        img{
+           width:400px;
+            height:500px;
+            object-fit:cover;
+        
+
+        }
+        h2
+        {
+            color:blue;
+        }
+        /*image collections */
+        .collection{
+            border-radius: 1px;
+            
+            }
+            #collection{
+                display:none;
+            }
+            /*BONFIRE*/
+            .collectionbon{
+            border-radius: 1px;
+            
+            }
+            #collectionbon{
+                display:none;
+            }
+            /*ECO-BIKE*/
+            .collectioneco{
+                border-radius:1px;
+            }
+            #collectioneco{
+                display:none;
+            }
+            /* RASPBERRY PI MON*/
+            .collectionrasp{
+                border-radius:1px;
+            }
+
+            #collectionrasp{
+                display:none;
+            }
+            .collectiondrone{
+                border-radius:1px;
+            }
+            #collectiondrone{
+                display:none;
+            }
+            .collectionseg{
+                border-radius:1px;
+            }
+            #collectionseg{
+                display:none;
+            }
+
+        .next{
+            right:150px;
+            cursor:pointer;
+            border-radius: 4px;
+            padding:5px;
+            position: absolute;
+            top:40%;
+            font-size: 75px;
+            color:white;
+        }
+        .prev{
+            left:150px;
+            cursor:pointer;
+            border-radius: 4px;
+            padding:5px;
+            position: absolute;
+            top:40%;
+            font-size: 75px;
+            color:white;
+        }
+        .dronebox{
+    
+            box-sizing: content-box;
+            border:black 5px solid;
+            background-color: cadetblue;
+        }
+       
+        .dronegrid{
+            padding-right:200px;
+            display:grid;
+            grid-template:30px/auto auto auto auto;
+            padding-right: 20px;
+            grid-row-gap: 5px;
+
+        }
+        .dronegrid > div{
+            background-color: cadetblue;
+            padding-right: 10px;
+        }
+        .dronehead{
+            grid-area: 1 / 1 / span1/ span4;
+            text-align: center;
+            font-style:oblique;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h4{
+            color:darkgrey;
+        }
+        h3{
+            color:darkgrey;
+        }
+        p{
+            color:darkgrey;
+        }
+
+        </style>
+        <body>
+            <div class="headsecbg">
+            <div class="header">
+                <div class="head" id="headerfont"><strong>PROJECTS</strong></div>
+                    <div class="head2"><a href="john.html"><strong>HOME</strong></a> </div>
+                    </div>
+         
+         <sector><div class="sector">
+           <ul><li> <div class="sector1"><a style="color:thistle" href=#pro1>SMART BIN</a></div></li></ul>
+            <ul> <li><div class="sector2"><a style="color:thistle" href=#pro2>WALL-E</a></div></li></ul>
+             <ul><li><div class="sector3"><a style="color:thistle" href=#pro3>UAV</a></div></li></ul>
+             <ul><li><div class="sector4"><a style="color:thistle" href=#pro4>ARTIFICIAL BONFIRE</a></div></li></ul>
+             <ul><li><div class="sector5"><a style="color:thistle" href=#pro5>R-TV</a></div></li></ul>
+             <ul><li><div class="sector6"><a style="color:thistle" href=#pro6>GLASS BOTTLE SEGREGATOR</a></div></li></ul>
+            </div></sector></div>
+
+            <h2 id=pro1>SMART BIN</h2>
+            <div class="box">
+                <div class="collection">
+                    <img src="smart1.jpg" style="width:100%;">
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart7.jpg" style="width:100%">.
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart8.jpg" style="width:100%">.
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart2.jpg" style="width:100%">
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart3.jpg" style="width:100%">
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart4.jpg" style="width:100%">
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart5.jpg" style="width:100%">.
+                </div>
+                <div class="collection" id="collection">
+                    <img src="smart6.jpg" style="width:100%">.
+                </div>
+               
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <h3 style="padding-top:45%"><strong style="color:crimson">OBJECTIVE:</strong>To segrgate organic waste from non-organic waste and convert organic waste to manure using mechanical and chemical methods.</h3>
+                  <p style="padding-top:1%;">
+                   <h4> What is new about this smart bin ? </h4></p>
+                <p>The innovation of this smart bin is inspired by the working of the human body.The aim of the project was to be able to segregate waste in the garbage bin itself for easy waste management.The organic waste 
+                from the garbage is seperated and converted to manure while the rest of the waste is sent to further segregation. Ex:ferrous waste is seperated by ferromagnets from the garbage. <br>
+               <br> When the waste is dumped into the bin,it is crushed into tiny particles and then undergoes a chemical process where the organic material is seperated from the inorganic and can be flushed out of the garbage.
+                In the end,the organic waste pH is balanced so that plant life and the soil does not get toxicated.This would give us the following advantages:
+                <ul>
+                    <li>Segregation of waste for easy recycling.</li>
+                    <li>To reduce the volume of waste and accomidate more waste in the bin.</li>
+                    <li>To produce manure for agricultural purpose</li>
+                    <li>To consume less time and power for the process of recycling</li>
+                    <li>To make recycling a eco-friendly process</li>
+                </ul>
+                </p>
+
+                <h2 id="pro2" style="padding-top:1%">WALL-E</h2>
+                    <div class="box">
+                        <div class="collectioneco">
+                            <img src="bike1.jpg" style="width:100%;">
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="bike2.jpg" style="width:100%">
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="eco1.jpg" style="width:100%">
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="eco2.jpg" style="width:100%">
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="eco3.jpg" style="object-fit:contain">.
+                        </div>
+                        <div class="collectioneco" id="collectioneco"> 
+                            <img src="eco4.jpg" style="object-fit: contain">.
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="eco5.jpg" style="object-fit:contain">
+                        </div>
+                        <div class="collectioneco" id="collectioneco">
+                            <img src="eco6.jpg" style="object-fit: contain;">    
+                        </div>
+                
+                        <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                        <a class="next" onclick="plusSlides2(1)">❯</a>
+                        </div> 
+                        <h3 style="padding-top:45%"><strong style="color:crimson">OBJECTIVE:</strong> i)Eco-Friendly Silencer Device.
+                        <br><span style="position:absolute;left:9.5%;padding-top:1.5%;"> ii)To reduce the electrical energy consumption of the bike</span></h3>
+                        <p style="padding-top:4% ;">As years are passing by,as responsible humans our focus has shifted more towards 
+                         having an eco-friendly and efficient transport system as the quality standards of our life
+                            is reducing and so is our life span with it.To maintain the ecological balance around us and support
+                            technological advancements we must try to encourage the use of eco friendly materials and methods.<br></p>
+                          
+                            <h4><strong>Eco-friendly Silencer Device:</strong></h4>
+                            <p> We know that at the end of the cycle of an IC(Internal Combustion) engine,exhaust
+                             gases are released from the  exhaust port and these gases exit from the Silencer device of the bike.
+                             The silencer devices of bikes have a second purpose apart from reducing the sound from the engine,but also 
+                             creates a certain amount of back pressure to the engine with the help of
+                              <q>Bend Pipes</q>,to increase the efficeincy of the engine.
+                        </p>
+                        <p>Centrifugal force due to roation causes heavier particles to move towards 
+                            the end and lighter particles to the center.Using this concept,we can use the centrifugal force
+                             of the rotational silencer(in the above slides) to make
+                            the unburnt particles(which are heavier) due to incomplete combustion to move towards the end 
+                            where filters and absorbents fitted in the silencers trap these particles and release the filtered air.
+                        </p>
+                        <p>
+                            To compensate for the backforce casued due to the centrifugal force caused due to the rotation 
+                            of the silencer,the bends in the bend pipes are reduced and made straight which minimizes 
+                            the effect of the centrifugal force caused by the rotation.This leaves the silencer with the 
+                            same efficiency,while reducing the pollutants from the exhaust gases.Since,the vehicle is a gearless motorcycle(scooty) and 
+                            the gear box is to the side,the weight of the silencer should counter-balance the weight of the gearbox.
+                        </p> <h4>Usage of LED Lamps:</h4>
+                        <p>A lot of energy is wasted with the use of Halogen and CFL lamps in an automobile for headlights,
+                            brake lights etc,.,instead, LED lamps can replace these lamps and energy can be conserved and used for 
+                        rotating the silencer.</p>
+
+                        <h2 id="pro3" style="padding-top:1%">BUILDING A UAV FOR A 1.1KG THRUST</h2>
+            <div class="box">
+                <div class="collectiondrone">
+                    <img src="Drone1.jpg" style="object-fit:fill">
+                </div>
+                <div class="collectiondrone" id="collectiondrone">
+                    <img src="Drone2.jpg" style="object-fit: contain">
+                </div>
+        
+                <a class="prev" onclick="plusSlides4(-1)">❮</a>
+                <a class="next" onclick="plusSlides4(1)">❯</a>
+                </div>
+
+
+
+ <h3 style="padding-top:550px "><strong style="color:crimson">OBJECTIVE:</strong> To build a drone with an net upward thrust of 1.1kg.</h3>
+
+
+ <div class="dronebox"><div class="dronegrid">
+     
+<div class="dronehead">Specifications</div>
+       <div class="g4"><strong>Frame:</strong> 450mm Quad X frame</div>
+ <div class="g1"> <strong>Motors:</strong> 4 x 1000kV Turnigy(d2830/11) BLDC motor</div>
+  <div class="g2"> <strong>Propellers:</strong> 10 x 4.7in(SF)</div>
+   <div class="g3"><strong>Battery:</strong> 3S Li-Po 4200mAh</div>
+   <div class="g5"><strong>ESC:</strong>30A</div>
+</div></div>
+<h4><strong>Calculating Thrust of the drone:</strong></h4>
+<h4>To calculate the thrust of the drone:</h4>
+
+<p>Net Thrust= (Thrust per motor x Number of motors x percentage of throttle)-Weight of the drone</p>
+<span style="padding-right:15px"> <li> Thrust per motor=738g(As per data sheet in the 2nd slide for 10 x4.5 SF props)</li>    
+ <li>Number of motors=4</li> 
+ <li> percentage of throttle=85%</li>
+ <li>weight of the drone=1000gms(approx)</li></span>
+
+<p>Net Thrust= (4 x 0.85 x 736)-1000=(2502.4)-1000=1502.4 gms (or) 1.5kg upthrust </p>
+<p>The theoretical thrust is greater than 1.1kg as the resistance due to air and temperature
+    factors are not taken into considerations.The following computed data is an approximate value of thrust when 
+    air and temperature are taken into considerations.
+</p><img style="width:initial" src="Drone3.jpg">
+<img style="width:fit-content" src="Drone4.jpg">
+
+                
+               
+                    <h2 id="pro4" style="padding-top:1%">ARTIFICIAL BONFIRE</h2>
+                <div class="box">
+                    <div class="collectionbon">
+                        <img src="bon1.jpg" style="object-fit:contain">
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon2.jpg" style="width:100%">
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon3.jpg" style="width:100%">
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon4.jpg" style="width:100%">.
+                    </div>
+                    <div class="collectionbon" id="collectionbon"> 
+                        <img src="bon5.jpg" style="width:100%">.
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon6.jpg" style="width:100%">
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon7.jpg" style="width:100%">    
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                        <img src="bon12.jpg" style="object-fit: contain;">
+                     </div>
+                    <div class="collectionbon" id="collectionbon">
+                       <img src="bon8.jpg" style="width:100%">
+                    </div>
+                    <div class="collectionbon" id="collectionbon">
+                       <img src="bon9.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides1(-1)">❮</a>
+                    <a class="next" onclick="plusSlides1(1)">❯</a>
+                    </div> 
+                    <h3 style="padding-top:45%"><strong style="color:crimson">OBJECTIVE:</strong><strong> To build an waterproofed Artificial Bonfire for commercial purpose in a Restaurant,with the following requests from the client:
+                         <ol style="position:absolute; left:8%;"><li>To create an artificial appearance of burning fire.</li>
+                        <li>To make artificial  logs.</li>
+                    <li>To produce artificial smoke. </li>
+                <li>To add rocks and stones around it to enchance the Bonfire. </li></ol></strong></h3>
+                    <br>
+                    <p style="padding-top: 4%;">
+                        <ol style="color: darkgrey;">
+                    <h4><li>To create an artificial appearance of burning fire:</li></h4>
+                    Since the model was big(5ft x 4ft x 4ft),a strong base was chosen that was made out of wood with a thickness of 1<sup> 1/2</sup> inches
+                     and supported by rollers(ball wheels) on the four corners.A wooden casing of 3 x 3 feet with an uplift of 3 inches was made on the base with the center of the base as the reference.
+                     The wooden base and the casing were polished and coated with multiple layers of water resistant all the electronics and electrical material are placed inside the wooden casing
+                      and the edges are waterproofed with an epoxy.<br><br>Filters of different colors are used on LED bulbs of approproiate watts to
+                      recreate the same colors in a real fire.Reflectors are used to spread and mix the shades of light to create a contrast in the colours.
+                      The bulbs and filter papers are surrounded by a trapezoidal structure with a material made of a composite glass-plastic material that refracts the light.The edges of the trapezoidal structure are fitted with 
+                      red LED lights to create the outer shades of a flame.
+                      <h4><li>To make artificial logs:</li></h4>
+                      The artificial logs were made by using different gauges of PVC pipes.The pipes were first sand papered to remove 
+                      the outer color and lustrous look of the PVC pipe.Then deep cuts were made in these pipes with the help of a file.
+                      The pipes are then stained with a combination of walnut and black stainers with a double coating and left to dry.
+                      <h4><li>To produce artificial smoke</li></h4>
+                      With the help of an ultrasonic mistmaker we can produce mist that looks like smoke.Since mist is water vapour and heavier than air,it does not rise 
+                      on its own,hence a motor fan system is arranged to create vaccum and help the mist rise like smoke.Water level in the mist maker container
+                      is constantky maintained by a water bob sensor that triggers a pump to fill it with water when water levels in the mist maker container is low.
+                      <h4><li>To add rocks and stones to enhance the bonfire:</li></h4>
+                      Medium-sized Pebble like river stones and natural granite stones were placed around the base to cover the gap between the base and the ground and this gives the bonfire a natural look. 
+
+                   </ol> </p>
+                     
+        
+                    
+                        <h2 id="pro5" style="padding-top:1%">R-TV</h2>
+                        <div class="box">
+                            <div class="collectionrasp">
+                                <img src="RASP1.jpg" style="width:100%">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp">
+                                <img src="RASP2.jpg" style="object-fit:contain">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp">
+                                <img src="RASP3.jpg" style="object-fit:contain">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp">
+                                <img src="RASP7.jpg" style="object-fit:contain">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp">
+                                <img src="RASP4.jpg" style="object-fit:contain">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp"> 
+                                <img src="RASP5.jpg" style="object-fit:contain">
+                            </div>
+                            <div class="collectionrasp" id="collectionrasp">
+                                <img src="RASP6.jpg" style="object-fit:contain">
+                            </div>
+                            <a class="prev" onclick="plusSlides3(-1)">❮</a>
+                        <a class="next" onclick="plusSlides3(1)">❯</a>
+                        </div> 
+                        <h3 style="padding-top:550px "><strong style="color:crimson">OBJECTIVE:</strong> To Make an entertainment device from scrap.</h3>
+                    <p style="position:absolute;right:35%;width:fit-content;background-color:rgb(122, 40, 1);color:white;"><q><strong> when you think you’re at the end of something, you’re at the beginning of something else.</q><br >-Fred Rogers</strong></p>
+                       <h4 style="padding-top:6%"><strong>The screen:</strong></h4> 
+                    <p>Laptops that are damaged or have an outdated firmware are usually just left lying around in the house or thrown away.There are many useful parts that can be harvested from an outdated laptop to make innovative projects
+                        .One of the important part is a laptop screen.The screen can be harvested and re-used as a monitor for some basic operations. 
+                    </p>
+                    <h4><strong>The LCD Controller Board:</strong></h4>
+                    <p>This is a A/V conversion device that converts the signals received from a source through a 
+                        data transmission cable(HDMI,VGA etc,.) to the monitor.</p>
+                        <h4>Backlight of display:</h4>
+                        <p>The LCD backlight for this device was damaged and LCD would consume more energy than an LED display, so the backlight was replaced with LED toilluminate the display.
+                        </p>
+                       <h4>Casing:</h4>
+                       <p>Plastic containers were cut to the required dimensions for the casing of the display,controller board,buttons and raspberry pi to protect them from being damaged by dust and physical shocks.</p>
+                       <h4>Powered By:</h4>
+                        <p>The display was powered by a Raspberry pi model 3B in which a 
+                            raspbian OS or a custom OS can be installed for the required OS and GUI(Graphical User Interface).
+                        <br>Specifications:<ul style="color:darkgrey;"><li>SoC: Broadcom BCM2837</li>
+                        <li>CPU: 4× ARM Cortex-A53, 1.2GHz</li>
+                        <li>GPU: Broadcom VideoCore IV</li>
+                        <li>RAM: 1GB LPDDR2 (900 MHz)</li>
+                        <li>Networking: 10/100 Ethernet, 2.4GHz 802.11n wireless</li>
+                        <li> Bluetooth: Bluetooth 4.1 Classic, Bluetooth Low Energy</li>
+                        <li>Storage: microSD</li>
+                        <li>GPIO: 40-pin header, populated</li>
+                        <li> Ports: HDMI, 3.5mm analogue audio-video jack, 4× USB 2.0, Ethernet, Camera Serial Interface (CSI), Display Serial Interface (DSI)</li></ul></p>
+                        <h4>Amplifier:</h4>
+                        <p>An old outdated amplifier was used to connect woofers and speakers as audio support to the device,through the aux port in the Raspberry pi.</p>
+                        <h4>Speakers and Woofers:</h4>
+                        <p>The Speakers and woofers are from a damaged Sony DVD player set,in which the speakers were in a good condition</p>
+                        <h4>Polarisation sheets:</h4>
+                        <p>Polarisation sheets are used to uniformly distribute the backlight across the screen and reduce the focus on one spot.</p>
+                        <h4>Power Buttons:</h4>
+                        <p>Buttons were attatched to the display to power it on and off when required.</p>
+                        <h4>HDMI-VGA converter:</h4>
+                        <p>The controller board supports only VGA,while the raspberry pi supports only HDMI.So a converter was used to meet both ends.</p>
+                       
+                       
+                        <h2 id="pro6" >GLASS BOTTLE SEGREGATOR</h2>
+                        <div class="box">
+                            <div class="collectionseg">
+                                <img src="gseg.jpg" style="object-fit:contain;">
+                            </div>
+                            <div class="collectionseg" id="collectionseg">
+                                <img src="gseg1.jpg" style="object-fit: contain;">
+                            </div>
+                            <div class="collectionseg" id="collectionseg">
+                                <video style="width:400px; height:500px; object-fit: contain; " controls>
+                                    <source src="segproof.mp4" type="video/mp4">
+                                <source src="segproof.mp4" type="video/ogg">
+                                </video>
+        
+                            </div>
+                        
+                            
+                            <a class="prev" onclick="plusSlides5(-1)">❮</a>
+                            <a class="next" onclick="plusSlides5(1)">❯</a>
+                            </div>
+                            <h3 style="padding-top:45%"><strong style="color:crimson">OBJECTIVE:</strong>To segrgate glass bottles/glass on the basis of color.</h3>
+                                <p style="padding-top:1%;">This project is an extension of the smart bin project in which,glass is segerated on the basis of color.The intensity of white light passing through different colors of glass varies with the color.This principle is used to differentiate colors of the glass and with the help of servos and geared motors,these bottles are dropped in different chambers. 
+                                    This machine would save the amount of time involved and the risk of getting hurt to a minimum compared to using people for this job.
+                                </p>
+        
+</body>
+</head>
+<footer>
+    <p style="color:green"><strong>This website is designed by G Peter Jones.</strong></p>
+</footer>
+</HTML>
